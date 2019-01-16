@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Computer Parts</title>
@@ -75,9 +75,9 @@
                     <td><a th:href="@{delete/(id=${compPart.getId()})}" class="btn btn-danger deleteBtn">Delete</a></td>
                 </tr>
                 <tr>
-                    <td>Can Build:</td>
+                    <th>Can Build:</th>
                     <th th:text="${availableComps}"></th>
-                    <td>Computers [out of all Parts in the DB]</td>
+                    <th>Computers [out of all Parts in the DB]</th>
                     <td> </td>
                     <td>
                         <button class="btn btn-success newBtn">Add New Part</button>
